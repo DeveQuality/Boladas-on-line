@@ -77,26 +77,21 @@ nav a:hover{
     cursor:pointer;
 }
 
-main{
-  display: flex;
-  grid-template-columns: auto 90vw auto;
-  gap: 20px;
-  margin-top: 20px;
-}
 main>h1{
     text-align: center;
 
 }
 section#container{
-    flex-flow: row wrap;
     display: flex;
-
+    flex-wrap:wrap;
+    max-width: 95%;
+    margin: 0 auto;
     border-radius: 20px;
     padding: 10px;
     background-color:var(--texto--);
 }
 div.produts{
-    flex: auto;
+    flex: 1 1 200px;
     margin: 10px;
     width: 200px;
     height: 200px;
@@ -111,7 +106,7 @@ div.produts{
     nav{
         position:absolute;
         top:70px;
-        left:0;
+        right:0;
         width:50%;
         background:#111;
         flex-direction:column;
