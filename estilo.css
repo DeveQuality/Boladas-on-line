@@ -7,7 +7,6 @@
 :root{
     --fundo--principal:rgb(216, 216, 216);
     --fundo--card:rgb(255, 254, 254);
-    --menu:#1E3A8A;
     --botoes:#F97316;
     --texto:#374151;
     --destaque:#3B82F6;
@@ -85,13 +84,11 @@ main>h1{
 }
 
 section#container{
-    display: flex;
-    flex-wrap:wrap;
-    max-width: 95%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 5px;
     border-radius: 20px;
-    padding: 10px;
-    background-color:var(--fundo--principal--);
+    background-color:var(--fundo--principal);
 }
 div.produts{
     flex: 1 1 200px;
@@ -101,7 +98,16 @@ div.produts{
     background-color: var(--fundo--card);
     border-radius: 10px;
 }
-
+footer{
+  height: 100px;
+  background-color: var(--texto);
+  border-top-left-radius:10%;
+  border-top-right-radius:10% ;
+}
+footer>p{
+  font-weight: bold;
+  text-align: center;
+}
 
 
 @media (max-width:768px){
