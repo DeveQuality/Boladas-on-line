@@ -30,6 +30,9 @@ header{
     padding:15px 1%;
     background:#111;
     color:white;
+    position: sticky;               /* deixa o menu fixo */
+    top: 0;                         /* deixa o menu fixo */
+    z-index: 1;                     /* deixa o menu fixo */
 }
 
 .logo{
@@ -79,34 +82,38 @@ nav a:hover{
 main>h1{
     text-align: center;
 }
-.main span{
+ span{
     color:#ff3c3c;
 }
 
 section#container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 5px;
-    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 10px;
     background-color:var(--fundo--principal);
 }
 div.produts{
     flex: 1 1 200px;
-    margin: 10px;
-    width: 200px;
-    height: 200px;
+    margin: 5px;
+    max-width: 300px;
+    height: 400px;
     background-color: var(--fundo--card);
     border-radius: 10px;
 }
 footer{
   height: 100px;
-  background-color: var(--texto);
-  border-top-left-radius:10%;
-  border-top-right-radius:10% ;
+  background-color: var(--);
 }
 footer>p{
   font-weight: bold;
   text-align: center;
+}
+div#social a{
+    display: flex;
+    align-items:center;
+    color: #ff3c3c;
 }
 
 
