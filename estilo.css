@@ -151,10 +151,10 @@ div#social a{
     }
     div.produts{
     flex: 1 1 200px;
-    margin: 5px;
-    max-width: 160px;
+    margin: 2px;
+    max-width: 170px;
     height: 300px;
     background-color: var(--fundo--card);
-    border-radius: 10px;
-}
+    border-radius: 2px;
+    }
 }
