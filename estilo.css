@@ -34,6 +34,26 @@ header{
     top: 0;                         /* deixa o menu fixo */
     z-index: 1;                     /* deixa o menu fixo */
 }
+#artigo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.pesquisa input{
+    margin: 19px;
+    padding: 10px;
+    border: 2px solid var(--botoes);
+    border-radius: 10px;
+}
+
+/* Note que usamos dois pontos duplos (::) */
+.pesquisa input::placeholder {
+    color: #ff3c3c;          /* Muda a cor */
+    font-size: 14px;         /* Muda o tamanho */
+    font-style: italic;      /* Coloca em itálico */
+    opacity: 1;              /* Garante que a cor fique forte (o Firefox costuma baixar a opacidade) */
+    font-family: 'Arial', sans-serif;
+}
 
 .logo{
     font-size:24px;
@@ -119,7 +139,9 @@ div#social a{
     width: 20px;
     margin: 7px;
 }
-
+#social a{
+    color: var(--destaque);
+}
 
 @media (max-width:768px){
 
@@ -149,6 +171,7 @@ div#social a{
     nav.active{
         display:flex;
     }
+    
     div.produts{
     flex: 1 1 200px;
     margin: 2px;
@@ -156,5 +179,12 @@ div#social a{
     height: 300px;
     background-color: var(--fundo--card);
     border-radius: 2px;
+    }
+
+    .pesquisa input{
+    margin: 19px;
+    padding: 10px;
+    border: 2px solid var(--botoes);
+    border-radius: 10px;
     }
 }
