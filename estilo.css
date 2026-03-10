@@ -152,7 +152,7 @@ div#social a{
     div.produts{
     flex: 1 1 200px;
     margin: 2px;
-    max-width: 180px;
+    max-width: 175px;
     height: 300px;
     background-color: var(--fundo--card);
     border-radius: 2px;
