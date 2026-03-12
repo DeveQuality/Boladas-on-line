@@ -152,7 +152,7 @@ div#social a{
     cursor: pointer;
     height: 100%;
     width: 100%;
-    padding: 2px;
+    padding: 3px;
     border-radius: 10px;
 }
 .info{
@@ -182,12 +182,13 @@ div#social a{
 }
 .botao:hover{
     background-color: var(--fundo--principal);
+    color: var(--texto);
 }
 .botao a{
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color: var(--botoes);
+    color: var(--fundo--card);
     font-size: 1em;
 }
 
@@ -222,9 +223,10 @@ div#social a{
     
     div.produts{
     flex: 1 1 200px;
-    margin: 4px;
-    max-width: 169px;
-    height: 390px;
+    padding: 2px;
+    margin:3px;
+    max-width: 175px;
+    height: 400px;
     background-color: var(--fundo--card);
     border-radius: 2px;
     }
@@ -240,6 +242,13 @@ div#social a{
     font-size: 1em;
     padding: 1px;
     color: var(--texto);
-
-}
+    }
+    .img img{
+    box-shadow: 1px 1px 1px var(--botoes);
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+    border-radius: 10px;
+    }
 }
