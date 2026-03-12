@@ -7,8 +7,9 @@
 :root{
     --fundo--principal:rgb(216, 216, 216);
     --fundo--card:rgb(255, 254, 254);
-    --botoes:#F97316;
+    --botoes:#ff3c3c;
     --texto:#374151;
+
     --destaque:#3B82F6;
 }
 body{
@@ -36,7 +37,7 @@ header{
 }
 #artigo{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
     justify-content: space-around;
 }
 .pesquisa input{
@@ -111,14 +112,13 @@ section#container{
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 20px auto;
-    padding: 10px;
     background-color:var(--fundo--principal);
 }
 div.produts{
     flex: 1 1 200px;
     margin: 5px;
     max-width: 300px;
-    height: 400px;
+    height: 500px;
     background-color: var(--fundo--card);
     border-radius: 10px;
 }
@@ -141,6 +141,54 @@ div#social a{
 }
 #social a{
     color: var(--destaque);
+}
+
+/* estlo de imagens  */
+.img {
+    height: 60%;
+}
+.img img{
+    box-shadow: 2px 2px 1px var(--botoes);
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border-radius: 10px;
+}
+.info{
+    margin-top: 0;
+    border: 2px solid #d3d4d4;
+    border-radius: 10px;
+    margin: 10px;
+}
+.info h2{
+    cursor: pointer;
+    font-size: 1em;
+    padding: 5px;
+    color: var(--texto);
+
+}
+.info h2>span{
+    color: var(--botoes);
+}
+.botao{
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: var(--texto);
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.botao:hover{
+    background-color: var(--fundo--principal);
+}
+.botao a{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--botoes);
+    font-size: 1em;
 }
 
 @media (max-width:768px){
@@ -176,7 +224,7 @@ div#social a{
     flex: 1 1 200px;
     margin: 1px;
     max-width: 169px;
-    height: 300px;
+    height: 450px;
     background-color: var(--fundo--card);
     border-radius: 2px;
     }
