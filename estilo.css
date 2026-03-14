@@ -171,6 +171,17 @@ div#social a{
 }
 
 @media (max-width:768px){
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 6%;
+        background:#111;
+        color:white;
+        position: sticky;               /* deixa o menu fixo */
+        top: 0;                         /* deixa o menu fixo */
+        z-index: 1;                     /* deixa o menu fixo */
+    }
 
     nav{
         position:absolute;
