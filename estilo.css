@@ -41,6 +41,7 @@ header{
     justify-content: space-around;
 }
 .pesquisa input{
+    width: 290px;
     margin: 19px;
     padding: 10px;
     border: 2px solid var(--botoes);
@@ -184,6 +185,7 @@ div#social a{
     background-color: var(--fundo--principal);
 }
 .botao a{
+    display: block;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
@@ -191,6 +193,8 @@ div#social a{
     font-size: 1em;
 }
 .botao a:hover{
+    display: block;
+    padding: 3px;
     color: var(--botoes);
 }
 
