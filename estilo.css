@@ -111,7 +111,8 @@ main>h1{
 section#container{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1100px;
+    justify-content: center;
+    max-width: 80%;
     margin: 20px auto;
     background-color:var(--fundo--principal);
 }
@@ -149,13 +150,10 @@ div#social a{
     height: 150px;
 }
 .img img{
-    box-shadow: 2px 2px 1px var(--botoes);
     cursor: pointer;
     height: 150px;
     width: 100%;
     object-fit: cover;
-    padding: 3px;
-    border-radius: 10px;
 }
 .info{
     border: 2px solid #d3d4d480;
