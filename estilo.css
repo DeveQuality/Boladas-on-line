@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial;
+    font-family:"Montserrat",sans-serif;
 }
 :root{
     --fundo--principal:rgb(216, 216, 216);
@@ -16,7 +18,6 @@ body{
     background-color: var(--fundo--card);
 }
 h1{
-    color:var(--texto--);
     text-align: center;
     font-size: 25px;
     padding: 20px;
@@ -28,7 +29,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 1%;
+    padding:40px 6%;
     background:#111;
     color:white;
     position: sticky;               /* deixa o menu fixo */
@@ -54,7 +55,7 @@ header{
     font-size: 14px;         /* Muda o tamanho */
     font-style: italic;      /* Coloca em itálico */
     opacity: 1;              /* Garante que a cor fique forte (o Firefox costuma baixar a opacidade) */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo{
@@ -114,7 +115,7 @@ section#container{
     justify-content: center;
     max-width: 80%;
     margin: 20px auto;
-    background-color:var(--fundo--principal);
+    
 }
 div.produts{
     flex: 1 1 200px;
@@ -123,26 +124,6 @@ div.produts{
     height: 300px;
     background-color: var(--fundo--card);
     border-radius: 10px;
-}
-footer{
-  height: 100px;
-  background-color: var(--);
-}
-footer>p{
-  font-weight: bold;
-  text-align: center;
-}
-div#social {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-div#social a{
-    width: 20px;
-    margin: 7px;
-}
-#social a{
-    color: var(--destaque);
 }
 
 /* estlo de imagens  */
@@ -156,19 +137,37 @@ div#social a{
     object-fit: cover;
 }
 .info{
-    border: 2px solid #d3d4d480;
     border-radius: 10px;
     margin: 10px;
 }
 .info h2{
+    color: #000000a8;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 14px;
     padding: 3px;
-    color: var(--texto);
-
 }
 .info h2>span{
     color: var(--botoes);
+}
+
+
+footer{
+  height: 100px;
+}
+footer>p{
+  text-align: center;
+}
+div#social {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+div#social a{
+    width: 20px;
+    margin: 7px;
+}
+#social a{
+    color: var(--destaque);
 }
 
 @media (max-width:768px){
@@ -204,7 +203,6 @@ div#social a{
         justify-content: center;
         flex-wrap: wrap;
         max-width: 500px;
-        background-color:var(--fundo--principal);
     }
     div.produts{
         flex: 1 1 200px;
@@ -224,7 +222,7 @@ div#social a{
     }
     .info h2{
         cursor: pointer;
-        font-size: 0.9em;
+        font-size: 12px;
         padding: 1px;
         color: var(--texto);
     }
