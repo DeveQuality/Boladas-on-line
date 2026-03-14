@@ -199,7 +199,13 @@ div#social a{
     nav.active{
         display:flex;
     }
-    
+    section#container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 500px;
+        background-color:var(--fundo--principal);
+    }
     div.produts{
         flex: 1 1 200px;
         padding: 2px;
