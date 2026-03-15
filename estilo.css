@@ -22,6 +22,9 @@ h1{
     font-size: 25px;
     padding: 20px;
 }
+p{
+    font-size: 14px;
+}
 div.logo img{
     width: 29px;
 }
@@ -41,21 +44,20 @@ header{
     flex-flow: row wrap-reverse;
     justify-content: space-around;
 }
+.pesquisa{
+    border: 1px solid var(--botoes);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 19px;
+}
 .pesquisa input{
     width: 290px;
-    margin: 19px;
-    padding: 10px;
-    border: 2px solid var(--botoes);
-    border-radius: 10px;
+    padding: 4px;
+    border: none;
 }
-
-/* Note que usamos dois pontos duplos (::) */
-.pesquisa input::placeholder {
-    color: #ff3c3c;          /* Muda a cor */
-    font-size: 14px;         /* Muda o tamanho */
-    font-style: italic;      /* Coloca em itálico */
-    opacity: 1;              /* Garante que a cor fique forte (o Firefox costuma baixar a opacidade) */
-    font-family: 'Montserrat', sans-serif;
+.pesquisa input:focus{
+    outline: none;
 }
 
 .logo{
@@ -176,7 +178,6 @@ div.produts{
 
                 .main-img{
                     height:350px;
-                    border-radius:20px;
                     overflow:hidden;
                     display:flex;
                     align-items:center;
@@ -223,51 +224,81 @@ div.produts{
                 }
 
                 .titulo{
+                    color: var(--botoes);
                     text-align:center;
-                    font-size:26px;
+                    font-size:16px;
                     font-weight:bold;
                 }
 
-                .vantagens{
-                    background:#cc6a00;
-                    color:white;
-                    padding:25px;
-                    text-align:center;
-                    border-radius:10px;
-                }
-
                 .descricao{
-                    background:#ff5050;
-                    color:white;
-                    padding:50px;
+                    background:var(--fundo--principal);
+                    color:var(--texto);
+                    padding:20px;
                     text-align:center;
-                    border-radius:15px;
+                    border-radius:8px;
+                }
+                .lista li{
+                    text-align: justify;
+                    list-style:none;
+                }
+                .lista li>span{
+                    color: var(--destaque);
+                    font-weight: bold;
+                    
                 }
 
                 .redes{
-                    background:#5568e6;
-                    padding:20px;
+                    display: flex;
+                    justify-content: center;
+                    padding:40px;
                     text-align:center;
                     border-radius:10px;
+                    background-color: var(--fundo--principal);
+                }
+                .redes a{
+                    width: 60px;
+                    margin: 10px;
+                    padding: 10px;
+                    background-color: var(--fundo--card);
+                    border-radius: 50%;
+                    font-size: 29px;
+                }
+                .redes a:hover{
+                    box-shadow: 0px 0px 0px 1px var(--destaque);
+                    transition:.2s;
+                    transform:scale(1.1);
+                }
+                .right p{
+                    color: var(--botoes);
+                    font-weight: bold;
+                    font-size: 1em;
+
                 }
 
                 /* BOTAO FECHAR */
                 .fechar_dialog{
+                    color: black;
+                    background-color: var(--fundo--card);
+                    border-radius: 50%;
+                    padding: 5px;
                     position:absolute;
                     top:10px;
                     right:20px;
-                    font-size:26px;
+                    font-size:16px;
                     cursor:pointer;
+                }
+                .fechar_dialog:hover{
+                    background-color:rgb(204, 186, 186);
                 }
 
                 /* RESPONSIVO */
                 @media(max-width:768px){
                     .container{
-                    grid-template-columns:1fr;
+                        grid-template-columns:1fr;
                     }
                     .left{
-                    border-right:none;
-                    padding-right:0;
+                        border-right:none;
+                        padding-right:0;
                     }
                 }
 
@@ -364,18 +395,28 @@ div#social a{
         flex: 1 1 200px;
         padding: 2px;
         margin:3px;
-        max-width: 175px;
+        max-width: 160px;
         height: 260px;
         background-color: var(--fundo--card);
         border-radius: 2px;
     }
 
-    .pesquisa input{
-        margin: 19px;
+    .pesquisa{
+        border: 1px solid var(--botoes);
+        border-radius: 20px;
         padding: 10px;
-        border: 2px solid var(--botoes);
-        border-radius: 10px;
+        margin: 5px;
+        margin-top: 19px;
     }
+    .pesquisa input{
+        width: 290px;
+        padding: 4px;
+        border: none;
+    }
+    .pesquisa input:focus{
+        outline: none;
+    }
+
     .info h2{
         cursor: pointer;
         font-size: 12px;

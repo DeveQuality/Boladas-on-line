@@ -16,7 +16,11 @@ fechar.onclick=function(){
     dialog.close()
 }
 
-dialog.addEventListener("click",e=>{
+function trocar(el){            /* trocar as imagens da div galery */
+    imgGrande.src=el.src
+}
+
+dialog.addEventListener("click",e=>{        /* trocar imagens consoante o click na tela */
     if(e.target===dialog){
         dialog.close()
     }
