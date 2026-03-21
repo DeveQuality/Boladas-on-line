@@ -5,8 +5,8 @@ menuBtn.onclick = function(){
 menu.classList.toggle("active");
 }
 
-const img_dialog=document.querySelector('img.img_dialog')
-const dialog=document.querySelector('dialog')
+const img_dialog=document.getElementById('img_dialog')
+const dialog=img_dialog.parentElement.querySelector('dialog')
 const fechar=document.querySelector('span.fechar_dialog')
 
 img_dialog.onclick=function(){
