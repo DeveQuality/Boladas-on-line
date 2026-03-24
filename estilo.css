@@ -150,7 +150,7 @@ div.produts{
                     border: none;
                     border-radius:20px;
                     padding:20px;
-                    position:relative;
+                    position:sticky;
                     animation:fade .3s ease;
                 }
 
