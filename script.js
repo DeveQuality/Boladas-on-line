@@ -5,6 +5,24 @@ menuBtn.onclick = function () {
     menu.classList.toggle("active");
 };
 
+// Fechar menu ao clicar fora
+document.addEventListener('click', function(event) {
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+        menu.classList.remove("active");
+    }
+});
+
+// Toggle submenu on click for mobile
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault(); // Prevent link navigation on mobile
+            const submenu = dropdown.querySelector('.submenu');
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});
+
 // ABRIR DIALOG CORRETO
 document.querySelectorAll(".img img").forEach(img => {
     img.addEventListener("click", () => {
